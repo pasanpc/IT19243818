@@ -8,12 +8,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Client handling</title>
+<title>Admin handling</title>
 
 
 <link rel = "stylesheet" href = "Views/bootstrap.min.css">
 <script src = "Components/jquery-3.6.0.min.js"></script>
-<script src = "Components/Clients.js"></script>
+<script src = "Components/Admins.js"></script>
 
 
 
@@ -24,7 +24,7 @@
 	<div class="row">
 		<div class="col">
 
-		<h1>Clients Management</h1>
+		<h1>Admins Management</h1>
 		
 	<form id="formItem" name="formItem"  >
 		User Name:
@@ -54,7 +54,7 @@
 	<div id="divItemsGrid">
 	<%
 	User itemObj = new User();
-	out.print(itemObj.readClients());
+	out.print(itemObj.readAdmins());
 	%>
 	</div>
 
